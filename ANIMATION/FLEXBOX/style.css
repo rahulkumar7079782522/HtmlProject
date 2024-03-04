@@ -1,0 +1,78 @@
+body{
+    background-color: black;
+}
+#d1{
+    height: 400px;
+    width: 400px;
+    margin-left: 300px;
+    margin-top: 100px;
+    border: 2px solid red;
+    box-sizing: border-box;
+    position: relative;
+    animation-name: ani;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+@keyframes ani{
+    0%{
+        background-color: chocolate;
+    }
+    25%{
+        background-color: darkblue;
+    }
+    50%{
+        background-color: darkkhaki;
+    }
+    75%{
+        background-color: cornflowerblue;
+    }
+    100%{
+        background-color: darkgreen;
+    }
+}
+#d2{
+    height:100px;
+    width: 100px;
+    border: 2px solid blue;
+    background-color: aqua;
+    box-sizing: border-box;
+    position: absolute;
+    transition: 2s ease;
+    animation-name: anime;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* transform: translate(297px, 0px);
+    transform: translate(297px, 297px );
+    transform: translate(0px, 297px);
+    transform: translate(0px,0px);*/
+}
+/* #d2:hover{
+   transform-origin: bottom center; 
+   transform: rotate(180 deg);
+   border-radius: 50%;
+   background-color: blueviolet;
+} */
+@keyframes anime{
+    0%{ 
+        background-color: brown;
+        transform: translate(0px, 0px);
+    }
+    25%{border-radius: 50%;
+        background-color: chartreuse;
+        transform: translate(297px,0px);
+    }
+    50%{border-radius: 0%;
+        background-color: brown;
+        transform: translate(297px, 297px);
+    }
+    75%{border-radius: 50%;
+        background-color:darkgoldenrod;
+        transform: translate(0px, 297px);
+    }
+    100%{
+        transform: translate(0px, 0px);
+    }
+}
